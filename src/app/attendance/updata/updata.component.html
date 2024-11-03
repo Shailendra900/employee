@@ -1,0 +1,35 @@
+<button class="btn btn-success text-center emp-list-btn" (click)="getList()">Employees Attendance</button>
+<form #addEmployee="ngForm" (ngSubmit)="submit(addEmployee.value)" class="example-form">
+  <p class="p-message text-center">{{EmptMessage}}</p>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter Employee's Name</mat-label>
+    <input matInput placeholder="" name="name" ngModel="{{employeeData?.name}}">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select Possition</mat-label>
+    <mat-select name="possition" ngModel="{{employeeData?.possition}}">
+      <mat-option>None</mat-option>
+      <mat-option value="HR">HR</mat-option>
+      <mat-option value="Manager">Manager</mat-option>
+      <mat-option value="Employee">Employee</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Attendance Date</mat-label>
+    <input matInput [matDatepicker]="picker" name="date" ngModel="{{employeeData?.date}}">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+  <button type="submit" class="btn btn-success">Update Employee</button>
+
+</form>
+
+<img class="example-form-img"
+  src="https://t3.ftcdn.net/jpg/05/12/63/08/360_F_512630880_Nn9HtjFpmawr7Eg5itrl8UVD74hrlCMn.jpg" alt="employee-image">
+
+<router-outlet></router-outlet>

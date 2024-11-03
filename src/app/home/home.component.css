@@ -1,0 +1,42 @@
+.home-img img{
+    height: 90vh;
+    width: 100vw;
+}
+
+.tech-details{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    color: wheat;
+    
+}
+.about-tech img{
+    position: relative;
+    left: 50%;
+    bottom: 11em;
+    height: 355px;
+    border-radius: 5%;
+}
+.about-tech .tech{
+    text-align: left;
+}
+.about-us{
+    background: linear-gradient(90deg, gray,black);
+    height: 20%;
+    color: white;
+}
+
+.team-img img{
+    height:300px;
+    border-radius: 5%;
+}
+@media(min-width : 0px) and (max-width : 600px) {
+
+    .about-tech img{
+        position: relative;
+        bottom: 0px;
+        left:5%;
+        height: 155px;
+    }
+   
+}

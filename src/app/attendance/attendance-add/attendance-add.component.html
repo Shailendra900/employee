@@ -1,0 +1,35 @@
+<button class="btn btn-warning text-center emp-list-btn" (click)="getList()">Employees Attendance</button>
+<form #addEmployee="ngForm" (ngSubmit)="submit(addEmployee.value)" class="example-form">
+  <p class="p-message text-center">{{submitMessage}}</p>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter Employee's Name</mat-label>
+    <input matInput placeholder="Ex. Shailendra Verma" name="name" ngModel>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select Possition</mat-label>
+    <mat-select name="possition" ngModel>
+      <mat-option>None</mat-option>
+      <mat-option value="HR">HR</mat-option>
+      <mat-option value="Manager">Manager</mat-option>
+      <mat-option value="Employee">Employee</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Attendance Date</mat-label>
+    <input matInput [matDatepicker]="picker" name="date" ngModel>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <button type="submit" class="btn btn-warning">Add Attendance</button>
+
+</form>
+
+<img class="example-form-img"
+  src="https://www.celayix.com/wp-content/uploads/2023/11/Best-tips-for-effective-employee-management-1.png"
+  alt="employee-image">
+
+<router-outlet></router-outlet>

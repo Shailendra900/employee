@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.example-form{
+    display: grid;
+    height: 40%;
+    width: 40%;
+    margin: 7% 10%;
+}
+.p-message{
+    color: green;
+}
+.d-message{
+    color: red;
+}
+.example-form-img{
+    position: relative;
+    height: 34%;
+    width: 34%;
+    left:55%;
+    bottom:50%;
+}
+
+.emp-list-btn{
+    margin-top: 10px;
+    margin-left: 80%;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+    .example-form {
+        height:40%;
+        width:80vw;
+    }
+    .example-form-img{
+        position: relative;
+        height: 255px;
+        width: 100%;
+        left: 0;
+        bottom: 0px;
+    }
+    .emp-list-btn{
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+  }
+  

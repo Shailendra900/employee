@@ -1,0 +1,32 @@
+<button class="btn btn-info text-center emp-list-btn" (click)="getList()">Employees List </button>
+
+<form #addEmployee="ngForm" (ngSubmit)="submit(addEmployee.value)" class="example-form">
+  <p class="p-message text-center">{{addEmployeeMessage}}</p>
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter Employees Name</mat-label>
+    <input matInput placeholder="Ex. Shailendra Verma" name="name" ngModel>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label> City</mat-label>
+    <input matInput placeholder="Ex. Raipur" name="city" ngModel>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select name="gender" ngModel>
+      <mat-option>None</mat-option>
+      <mat-option value="Female">Female</mat-option>
+      <mat-option value="Male">Male</mat-option>
+      <mat-option value="Other">Other</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="submit" class="btn btn-info text-center">Add Employee</button>
+
+
+</form>
+<img class="example-form-img"
+  src="https://png.pngtree.com/png-vector/20220718/ourmid/pngtree-quarantine-office-people-employee-manager-png-image_5913171.png"
+  alt="employee-image">
+
+<router-outlet></router-outlet>

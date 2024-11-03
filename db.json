@@ -1,0 +1,36 @@
+{
+  "employee": [
+    {
+      "id": "0f32",
+      "name": "Bhavesh",
+      "city": "Raipur",
+      "gender": "Male"
+    },
+    {
+      "id": "7fd3",
+      "name": "Ram Babu",
+      "city": "Bhopal",
+      "gender": "Male"
+    }
+  ],
+  "employeeAtt": [
+    {
+      "id": "1414",
+      "name": "Sreeya",
+      "possition": "Employee",
+      "date": "2024-11-24T18:30:00.000Z"
+    }
+  ],
+  "payroll": [
+    {
+      "id": "15",
+      "employeeId": 5,
+      "employeeName": "bk",
+      "baseSalary": 4082,
+      "bonuses": 54040,
+      "deductions": 153,
+      "totalSalary": 4056,
+      "paymentDate": 18
+    }
+  ]
+}
